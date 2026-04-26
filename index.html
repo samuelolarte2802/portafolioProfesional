@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Olarte | Ingeniero de Sistemas en Formación</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --text: #333;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); }
+        
+        header { background: var(--primary); color: var(--white); padding: 4rem 2rem; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; font-weight: 300; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+        section { margin-bottom: 3rem; background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 1.5rem; padding-bottom: 0.2rem; }
+
+        /* Catálogo de Servicios */
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .service-card { border: 1px solid #eee; padding: 1.5rem; border-radius: 8px; transition: transform 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .service-card h3 { font-size: 1.1rem; margin-bottom: 0.8rem; color: var(--secondary); }
+        .service-card p { font-size: 0.9rem; color: #666; }
+
+        /* Proyectos */
+        .project { margin-bottom: 2rem; }
+        .project h3 { color: var(--accent); margin-bottom: 0.5rem; }
+        .project-tag { display: inline-block; background: #e1ecf4; color: #39739d; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; margin-bottom: 0.5rem; }
+
+        /* Stack */
+        .skills-list { display: flex; flex-wrap: wrap; gap: 0.8rem; list-style: none; }
+        .skills-list li { background: var(--secondary); color: white; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem; }
+
+        footer { text-align: center; padding: 2rem; color: #888; font-size: 0.9rem; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Samuel David Olarte Tenjo</h1>
+        <p>Ingeniero de Sistemas en Formación | Desarrollador de Software</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="resumen">
+            <h2>Resumen Ejecutivo</h2>
+            <p>Estudiante de sexto semestre en UNIMINUTO (Zipaquirá) enfocado en la transformación digital de PYMES y el desarrollo de software educativo. Especialista en traducir necesidades complejas de negocio en soluciones técnicas eficientes, con una sólida base en arquitectura de bases de datos, desarrollo backend y experiencias interactivas.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Catálogo de Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Transformación Digital para PYMES</h3>
+                    <p>Modernización de procesos analógicos mediante plataformas web personalizadas y gestión eficiente de información.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gestión de Bases de Datos</h3>
+                    <p>Diseño y optimización de bases de datos relacionales garantizando integridad y seguridad.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Desarrollo de Software a Medida</h3>
+                    <p>Creación de herramientas administrativas y aplicaciones CRUD con programación orientada a objetos.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gamificación y EdTech</h3>
+                    <p>Desarrollo de videojuegos y simuladores educativos en Unity 2D para aprendizaje interactivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack">
+            <h2>Stack Tecnológico</h2>
+            <ul class="skills-list">
+                <li>Java</li><li>Python</li><li>C#</li><li>C++</li><li>PHP</li>
+                <li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>SQL</li><li>AWS</li><li>Unity 2D</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="project">
+                <span class="project-tag">Gestión de Información</span>
+                <h3>Digitalización de Registros Comerciales</h3>
+                <p>Migración de 15 años de datos físicos a un sistema digital centralizado para un negocio de costura, optimizando la consulta de inventarios y clientes.</p>
+            </div>
+
+            <div class="project">
+                <span class="project-tag">Game Development / Ciberseguridad</span>
+                <h3>El Bosque del Phishing</h3>
+                <p>Videojuego educativo desarrollado en Unity enfocado en la detección de riesgos virtuales y prevención de ingeniería social.</p>
+            </div>
+
+            <div class="project">
+                <span class="project-tag">Backend</span>
+                <h3>Sistema CRUD Administrativo</h3>
+                <p>Arquitectura para la gestión de personal y recursos administrativos bajo el paradigma orientado a objetos.</p>
+            </div>
+        </section>
+
+        <section id="educacion">
+            <h2>Trayectoria Académica</h2>
+            <p><strong>Ingeniería de Sistemas</strong> - 6° Semestre (UNIMINUTO Zipaquirá)</p>
+            <p><strong>Certificación en Diseño Web</strong> (HTML5 / CSS3)</p>
+            <p><strong>Certificación en Atención al Cliente</strong></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Samuel David Olarte Tenjo | Chía, Cundinamarca</p>
+    </footer>
+
+</body>
+</html>
